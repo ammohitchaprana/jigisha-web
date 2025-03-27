@@ -6,7 +6,6 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
-  // Handle scroll effect for header
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -16,16 +15,11 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle hash scrolling when location changes
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-        // Close mobile menu if open
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         setIsMenuOpen(false);
       }
     }
@@ -35,12 +29,15 @@ function Header() {
     e.preventDefault();
     const element = document.querySelector(sectionId);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-      setIsMenuOpen(false); // Close mobile menu
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setIsMenuOpen(false);
     }
+  };
+
+  const handleAppointmentClick = (e) => {
+    e.preventDefault();
+    window.open('/appointment', '_blank');
+    setIsMenuOpen(false);
   };
 
   return (
@@ -56,9 +53,9 @@ function Header() {
         <nav className="navbar">
           <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <li>
-              <NavLink 
-                to="/" 
-                exact 
+              <NavLink
+                to="/"
+                exact
                 activeClassName="active"
                 onClick={(e) => {
                   e.preventDefault();
@@ -70,8 +67,8 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink 
-                to="/#about" 
+              <NavLink
+                to="/#about"
                 activeClassName="active"
                 onClick={(e) => handleNavClick(e, '#about')}
               >
@@ -79,8 +76,8 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink 
-                to="/#process" 
+              <NavLink
+                to="/#process"
                 activeClassName="active"
                 onClick={(e) => handleNavClick(e, '#process')}
               >
@@ -88,8 +85,8 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink 
-                to="/#doc" 
+              <NavLink
+                to="/#doc"
                 activeClassName="active"
                 onClick={(e) => handleNavClick(e, '#doc')}
               >
@@ -97,8 +94,8 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink 
-                to="/#gallery" 
+              <NavLink
+                to="/#gallery"
                 activeClassName="active"
                 onClick={(e) => handleNavClick(e, '#gallery')}
               >
@@ -106,8 +103,8 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink 
-                to="/#contact" 
+              <NavLink
+                to="/#contact"
                 activeClassName="active"
                 onClick={(e) => handleNavClick(e, '#contact')}
               >
@@ -115,8 +112,8 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink 
-                to="/#donate" 
+              <NavLink
+                to="/#donate"
                 className="donate-btn"
                 activeClassName="active"
                 onClick={(e) => handleNavClick(e, '#donate')}
@@ -125,18 +122,18 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink 
-                to="/appointment" 
+              <NavLink
+                to="/appointment"
                 className="appointment-btn"
                 activeClassName="active"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={handleAppointmentClick}
               >
                 Book Appointment
               </NavLink>
             </li>
           </ul>
-          <div 
-            className={`hamburger ${isMenuOpen ? 'active' : ''}`} 
+          <div
+            className={`hamburger ${isMenuOpen ? 'active' : ''}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <div className="line"></div>
