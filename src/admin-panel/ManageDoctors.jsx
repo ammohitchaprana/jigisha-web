@@ -103,7 +103,6 @@ const DoctorManagementPage = () => {
 
 
   const handleEdit = (doctor) => {
-    console.log(doctor.availableSlots);
     setFormData({
       name: doctor.name,
       specialization: doctor.specialization,

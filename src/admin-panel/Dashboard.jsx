@@ -3,6 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContaine
 import { Card, CardContent, CardHeader } from "@mui/material";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../utils/constants";
 
 const Dashboard = () => {
   const [doctors, setDoctors] = useState([]);
@@ -14,8 +15,8 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const [doctorRes, appointmentRes] = await Promise.all([
-          axios.get("http://localhost:3000/api/doctors", {withCredentials: true}),
-          axios.get("http://localhost:3000/api/appointments", {withCredentials: true}),
+          axios.get(BASE_URL + "/api/doctors", {withCredentials: true}),
+          axios.get(BASE_URL + "/api/appointments", {withCredentials: true}),
         ]);
         setDoctors(doctorRes.data);
         setAppointments(appointmentRes.data);

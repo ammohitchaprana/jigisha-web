@@ -1,6 +1,7 @@
 import axios from "axios";
+import { BASE_URL } from "../../utils/constants";
 
-const API_URL = 'http://localhost:3000/api/doctors';
+const API_URL = BASE_URL + '/api/doctors';
 
 // Get all doctors
 export const fetchDoctors = async () => {

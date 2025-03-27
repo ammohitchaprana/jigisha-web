@@ -7,3 +7,6 @@ export const appointmentFormWarningEnglish =<> <span className="text-red-600 fon
 export const pdfFooterDisclaimerHindi = `कृपया मरीज अपनी पहचान पत्र (आईडी) साथ लेकर आएं।`;
 
 export const pdfFooterDisclaimerEnglish = `Patients are requested to bring their identification (ID) with them.`;
+
+
+export const BASE_URL = location.hostname === "localhost" ?  "http://localhost:3000" : "";

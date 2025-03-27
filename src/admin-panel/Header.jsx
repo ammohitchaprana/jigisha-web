@@ -1,11 +1,12 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../utils/constants";
 
 const Header = ({ title }) => {
     const navigate = useNavigate();
     const handleLogout = async () => {
         try {
-          await axios.post("http://localhost:3000/admin/logout", {}, { withCredentials: true });
+          await axios.post(BASE_URL + "/admin/logout", {}, { withCredentials: true });
           return navigate("/admin/login");
         } catch (err) {
           console.error(err);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import generatePDF from '../utils/generatePDF'; 
-import { appointmentFormWarningEnglish, appointmentFormWarningHindi } from '../utils/constants';
+import { appointmentFormWarningEnglish, appointmentFormWarningHindi, BASE_URL } from '../utils/constants';
 
 const AppointmentModal = ({ livingStatus, onClose }) => {
   const [showWarning, setShowWarning] = useState(false);
@@ -33,7 +33,7 @@ const AppointmentModal = ({ livingStatus, onClose }) => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/doctors')
+      .get(BASE_URL + '/api/doctors')
       .then((res) => {
         const doctorsWithSlots = res.data.filter((doc) => doc.availableSlots.length > 0);
         setDoctors(doctorsWithSlots);
@@ -83,7 +83,7 @@ const AppointmentModal = ({ livingStatus, onClose }) => {
 
     try {
       const appointment = await axios.post(
-        'http://localhost:3000/api/appointments',
+        BASE_URL + '/api/appointments',
         formDataToSend,
         { headers: { 'Content-Type': 'application/json' } }
       );
