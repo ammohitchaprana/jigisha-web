@@ -15,8 +15,8 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const [doctorRes, appointmentRes] = await Promise.all([
-          axios.get(BASE_URL + "/api/doctors", {withCredentials: true}),
-          axios.get(BASE_URL + "/api/appointments", {withCredentials: true}),
+          axios.get(BASE_URL + "/doctors", {withCredentials: true}),
+          axios.get(BASE_URL + "/appointments", {withCredentials: true}),
         ]);
         setDoctors(doctorRes.data);
         setAppointments(appointmentRes.data);

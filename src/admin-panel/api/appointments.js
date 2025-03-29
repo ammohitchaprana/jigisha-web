@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BASE_URL } from "../../utils/constants";
 
-const API_URL = BASE_URL + '/api/appointments'; 
+const API_URL = BASE_URL + '/appointments'; 
 
 // Fetch all appointments
 export const fetchAppointments = async () => {

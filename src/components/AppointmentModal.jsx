@@ -33,7 +33,7 @@ const AppointmentModal = ({ livingStatus, onClose }) => {
 
   useEffect(() => {
     axios
-      .get(BASE_URL + '/api/doctors')
+      .get(BASE_URL + '/doctors')
       .then((res) => {
         const doctorsWithSlots = res.data.filter((doc) => doc.availableSlots.length > 0);
         setDoctors(doctorsWithSlots);
@@ -83,7 +83,7 @@ const AppointmentModal = ({ livingStatus, onClose }) => {
 
     try {
       const appointment = await axios.post(
-        BASE_URL + '/api/appointments',
+        BASE_URL + '/appointments',
         formDataToSend,
         { headers: { 'Content-Type': 'application/json' } }
       );
