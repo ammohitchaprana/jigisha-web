@@ -36,7 +36,7 @@ function Header() {
 
   const handleAppointmentClick = (e) => {
     e.preventDefault();
-    window.open('/appointment', '_blank');
+    window.open('/#/appointment', '_blank');
     setIsMenuOpen(false);
   };
 
