@@ -1,28 +1,53 @@
+// src/components/Hero.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import '../assets/styles/components/Hero.css';
+import heroImage from '../assets/images/build_comm_logo.avif';
 
-function Hero() {
-  const handleAppointmentClick = (e) => {
+const Hero = () => {
+  const handleNavClick = (e, sectionId) => {
     e.preventDefault();
-    window.open('/appointment', '_blank');
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
-    <section className="hero">
+    <section
+      className="hero"
+      style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage}) no-repeat center center/cover`,
+      }}
+    >
       <div className="hero-content">
-        <h1>Free Healthcare for Those in Need</h1>
-        <p>Connecting underprivileged patients with top doctors who volunteer their time</p>
+        <h1>Empowering Communities Together</h1>
+        <p>Supporting the underprivileged through various welfare programs</p>
         <div className="hero-btns">
-          <Link to="/appointment" className="btn-primary" onClick={handleAppointmentClick}>
-            Book Free Appointment
-          </Link>
-          <Link to="#doctors" className="btn-secondary">
-            Meet Our Doctors
-          </Link>
+          <NavLink
+            to="/#services"
+            className="btn-primary"
+            onClick={(e) => handleNavClick(e, '#services')}
+          >
+            Our Services
+          </NavLink>
+          <NavLink
+            to="/#donate"
+            className="btn-secondary"
+            onClick={(e) => handleNavClick(e, '#donate')}
+          >
+            Support Us
+          </NavLink>
         </div>
+      </div>
+      <div
+        className="floating-button"
+        onClick={(e) => handleNavClick(e, '#services')} // Change to desired section, e.g., '#appointment'
+      >
+        <i className="fas fa-hand-holding-heart"></i>
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

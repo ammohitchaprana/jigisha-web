@@ -1,4 +1,5 @@
 import { jsPDF } from "jspdf";
+import logoImg from "../assets/images/logo.png"; 
 
 const generatePDF = async (appointment_id, formData, doctors) => {
     const doc = new jsPDF();
@@ -6,7 +7,8 @@ const generatePDF = async (appointment_id, formData, doctors) => {
     const marginTop = 1;
     const pageWidth = doc.internal.pageSize.getWidth();
     const pageHeight = doc.internal.pageSize.getHeight();
-    const logo = "../../logo.png";
+    // const logo = "../assets/images/logo.png";
+    const logo = logoImg; 
 
     const loadImage = (src) => {
         return new Promise((resolve, reject) => {
@@ -35,8 +37,8 @@ const generatePDF = async (appointment_id, formData, doctors) => {
     doc.setFontSize(10);
     const companyInfo = [
         "Email: help@jigisha.org",
-        "Address: B-121, Shyam Kunj, Gali No. 10,",
-        "Goyla Extension, Najafgarh, New Delhi, India",
+        "Address: 6478/P-036, Jankipuram Garden,",
+        "Lucknow, India - 226021",
     ];
 
     const textStartX = pageWidth / 2 + 30; // Push text further right
@@ -48,7 +50,7 @@ const generatePDF = async (appointment_id, formData, doctors) => {
     });
 
     // writing regd. number
-    doc.text("Reg. No: JGSH2025001", pageWidth / 6 - 15, marginTop + 18);
+    doc.text("Reg. No: 1270", pageWidth / 6 - 15, marginTop + 18);
 
 
     // Separator Line Below Header

@@ -1,11 +1,15 @@
+// src/components/Header.js
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import '../assets/styles/components/Header.css';
+import logo from '../assets/images/favi.png';
 
-function Header() {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
+  // Handle header scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -15,16 +19,20 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Handle smooth scrolling when hash changes
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setIsMenuOpen(false);
       }
+    } else if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+    setIsMenuOpen(false); // Close mobile menu on navigation
   }, [location]);
 
+  // Handle navigation click for smooth scrolling
   const handleNavClick = (e, sectionId) => {
     e.preventDefault();
     const element = document.querySelector(sectionId);
@@ -34,9 +42,10 @@ function Header() {
     }
   };
 
-  const handleAppointmentClick = (e) => {
+  // Handle Home click to scroll to top
+  const handleHomeClick = (e) => {
     e.preventDefault();
-    window.open('/#/appointment', '_blank');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setIsMenuOpen(false);
   };
 
@@ -44,10 +53,10 @@ function Header() {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="logo">
-          <img src="favi.png" alt="Jigisha Society" className="logo-img" />
+          <img src={logo} alt="Jigisha Society" className="logo-img" />
           <div className="logo-text">
             <h1>Jigisha Society</h1>
-            <p>Healthcare for the Needy</p>
+            <p>Serving the Community</p>
           </div>
         </div>
         <nav className="navbar">
@@ -57,11 +66,7 @@ function Header() {
                 to="/"
                 exact
                 activeClassName="active"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                  setIsMenuOpen(false);
-                }}
+                onClick={handleHomeClick}
               >
                 Home
               </NavLink>
@@ -77,29 +82,11 @@ function Header() {
             </li>
             <li>
               <NavLink
-                to="/#process"
+                to="/#services"
                 activeClassName="active"
-                onClick={(e) => handleNavClick(e, '#process')}
+                onClick={(e) => handleNavClick(e, '#services')}
               >
-                Process
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/#doc"
-                activeClassName="active"
-                onClick={(e) => handleNavClick(e, '#doc')}
-              >
-                Doctors
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/#gallery"
-                activeClassName="active"
-                onClick={(e) => handleNavClick(e, '#gallery')}
-              >
-                Gallery
+                Services
               </NavLink>
             </li>
             <li>
@@ -121,16 +108,6 @@ function Header() {
                 Donate
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/appointment"
-                className="appointment-btn"
-                activeClassName="active"
-                onClick={handleAppointmentClick}
-              >
-                Book Appointment
-              </NavLink>
-            </li>
           </ul>
           <div
             className={`hamburger ${isMenuOpen ? 'active' : ''}`}
@@ -144,6 +121,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

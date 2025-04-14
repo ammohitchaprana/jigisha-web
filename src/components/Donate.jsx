@@ -1,13 +1,18 @@
+// src/components/Donate.js
 import React, { useState } from 'react';
+import '../assets/styles/components/Donate.css';
+import qrCode from '../assets/images/upi-jigisha.png';
 
-function Donate() {
+const Donate = () => {
   const [copiedMessage, setCopiedMessage] = useState('');
 
   const copyUPI = () => {
     const upiText = 'boim-683991891189@boi';
     navigator.clipboard.writeText(upiText).then(() => {
       setCopiedMessage('UPI ID copied to clipboard!');
-      setTimeout(() => setCopiedMessage(''), 3000);
+      setTimeout(() => {
+        setCopiedMessage('');
+      }, 3000);
     });
   };
 
@@ -24,7 +29,7 @@ function Donate() {
             <div className="donate-method">
               <h3>Scan QR Code</h3>
               <div className="qr-code">
-                <img src="upi-jigisha.png" alt="Donation QR Code" />
+                <img src={qrCode} alt="Donation QR Code" />
               </div>
               <p>Scan this code with any UPI app to donate instantly</p>
             </div>
@@ -37,16 +42,28 @@ function Donate() {
               <button className="copy-btn" onClick={copyUPI}>
                 <i className="fas fa-copy"></i> Copy UPI ID
               </button>
-              <p style={{color: 'var(--accent-color)', height: '20px'}}>{copiedMessage}</p>
+              <p style={{ color: 'var(--accent-color)', height: '20px' }}>
+                {copiedMessage}
+              </p>
             </div>
             <div className="donate-method">
               <h3>Bank Transfer</h3>
               <div className="bank-details">
-                <p><strong>Account Name:</strong> Jigisha Society</p>
-                <p><strong>Account Number:</strong> 683-910-110011189</p>
-                <p><strong>Bank Name:</strong> Bank of India</p>
-                <p><strong>IFSC Code:</strong> BKID0006839</p>
-                <p><strong>Branch:</strong> Najafgarh, New Delhi</p>
+                <p>
+                  <strong>Account Name:</strong> Jigisha Society
+                </p>
+                <p>
+                  <strong>Account Number:</strong> 683-910-110011189
+                </p>
+                <p>
+                  <strong>Bank Name:</strong> Bank of India
+                </p>
+                <p>
+                  <strong>IFSC Code:</strong> BKID0006839
+                </p>
+                <p>
+                  <strong>Branch:</strong> Sitapur road, Lucknow - 226020
+                </p>
               </div>
             </div>
           </div>
@@ -54,6 +71,6 @@ function Donate() {
       </div>
     </section>
   );
-}
+};
 
 export default Donate;

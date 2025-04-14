@@ -2,17 +2,15 @@ import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Cards from './components/Cards';
 import About from './components/About';
-import Mission from './components/Mission';
-import Process from './components/Process';
-import Doctors from './components/Doctors';
-import Cities from './components/Cities';
+import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Donate from './components/Donate';
-import FloatingElements from './components/FloatingElements';
 import Footer from './components/Footer';
 import Appointment from './components/Appointment';
-import './App.css';
+import FloatingElements from './components/FloatingElements';
+import './assets/styles/App.css';
 
 import Layout from './admin-panel/Layout'
 import Dashboard from './admin-panel/Dashboard'
@@ -31,12 +29,10 @@ function App() {
             element={
               <>
                 <Header />
+                <Cards />
                 <Hero />
                 <About />
-                <Mission />
-                <Process />
-                <Doctors />
-                <Cities />
+                <Services />
                 <Gallery />
                 <Donate />
                 <FloatingElements />
@@ -44,6 +40,12 @@ function App() {
               </>
             }
           />
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/contact" element={<Footer />} /> */}
+
           <Route path="/appointment" element={<Appointment />} />
 
           <Route path='/admin/login' element={<AdminLogin />} />
