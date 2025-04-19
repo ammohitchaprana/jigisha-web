@@ -40,12 +40,12 @@ const Hero = () => {
           </NavLink>
         </div>
       </div>
-      <div
+      {/* <div
         className="floating-button"
         onClick={(e) => handleNavClick(e, '#services')} // Change to desired section, e.g., '#appointment'
       >
         <i className="fas fa-hand-holding-heart"></i>
-      </div>
+      </div> */}
     </section>
   );
 };

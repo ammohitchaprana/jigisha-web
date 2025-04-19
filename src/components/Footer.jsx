@@ -61,7 +61,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <i className="fas fa-phone"></i> +91 90130 61308
+                <i className="fas fa-phone"></i> +91 92509 82996
               </li>
               <li>
                 <i className="fas fa-map-marker-alt"></i> 6478/P-036, Jankipuram Garden, Lucknow - 226021
