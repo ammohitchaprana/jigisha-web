@@ -1,6 +1,12 @@
 // src/components/Gallery.js
 import React from 'react';
 import '../assets/styles/components/Gallery.css';
+import WiA from '../assets/images/WiA1.jpeg';
+import WiA2 from '../assets/images/WiA2.jpeg';
+import WiA3 from '../assets/images/WiA3.jpeg';
+import WiA4 from '../assets/images/WiA4.jpeg';
+import WiA5 from '../assets/images/WiA5.jpeg';
+import WiA6 from '../assets/images/WiA6.jpeg';
 
 const Gallery = () => {
   return (
@@ -14,56 +20,56 @@ const Gallery = () => {
         <div className="gallery-grid">
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef"
-              alt="Medical Camp"
+              src={WiA}
+              alt="Food & Fruit Distribution at KGMU During COVID-2"
             />
             <div className="gallery-overlay">
-              <h3>Free Medical Camp</h3>
+              <h3>Food & Fruit Distribution at KGMU During COVID-2</h3>
             </div>
           </div>
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1581056771107-24ca5f033842"
-              alt="Doctor Consultation"
+              src={WiA2}
+              alt="KGMU camp"
             />
             <div className="gallery-overlay">
-              <h3>Doctor Consultation</h3>
+              <h3>Food & Fruit Distribution at KGMU During COVID-2</h3>
             </div>
           </div>
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5"
-              alt="Health Checkup"
+              src={WiA3}
+              alt="KGMU camp"
             />
             <div className="gallery-overlay">
-              <h3>Health Checkup</h3>
+              <h3>Food & Fruit Distribution at KGMU During COVID-2</h3>
             </div>
           </div>
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50"
-              alt="Patient Care"
+              src={WiA4}
+              alt="KGMU camp"
             />
             <div className="gallery-overlay">
-              <h3>Patient Care</h3>
+              <h3>Food & Fruit Distribution at KGMU During COVID-2</h3>
             </div>
           </div>
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528"
-              alt="Community Health"
+              src={WiA5}
+              alt="PCS Aspirants"
             />
             <div className="gallery-overlay">
-              <h3>Community Health</h3>
+              <h3>PCS Aspirants</h3>
             </div>
           </div>
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0"
+              src={WiA6}
               alt="Health Awareness"
             />
             <div className="gallery-overlay">
-              <h3>Health Awareness</h3>
+              <h3>At Queen Marys Hospital</h3>
             </div>
           </div>
         </div>

@@ -26,9 +26,9 @@ const Cards = () => {
       <div className="notification-card">
         <h3>Notifications</h3>
         <ul className="notification-list">
-          <li>Community Help Event - April 10, 2025</li>
-          <li>Volunteer Registration Open</li>
-          <li>Annual Fundraiser - May 1, 2025</li>
+          <li>Free Food & Water Distribution at Queen Mary Hospital, KGMU for Patient Attendants - Dec 27, 2024</li>
+          <li>Free Food & Water Distribution for PCS Candidates from Remote Districts - Dec 23, 2024</li>
+          <li>Free Food & Fruit distribution at KGMU Trauma Center during COVID-19 Wave 2 - May 29, 2021</li>
         </ul>
       </div>
     </section>
