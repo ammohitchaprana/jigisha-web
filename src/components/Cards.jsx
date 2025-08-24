@@ -2,7 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/Cards.css';
-import cardImage from '../assets/images/card_image.jpeg';
+// import cardImage from '../assets/images/card_image.jpeg';
+import GalleryLogo from '../assets/images/Gallery_Logo.jpeg'
 
 const Cards = () => {
   return (
@@ -12,7 +13,7 @@ const Cards = () => {
         <div className="gallery-grid">
           <div className="gallery-item">
             <img
-              src={cardImage}
+              src={GalleryLogo}
               alt="Event"
             />
             <div className="gallery-overlay">
