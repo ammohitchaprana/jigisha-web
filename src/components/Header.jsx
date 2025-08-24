@@ -42,8 +42,13 @@ const Header = () => {
     }
   };
 
-  // Handle Home click to scroll to top
+  // Handle Home click to scroll to top or navigate home
   const handleHomeClick = (e) => {
+    // If we're not on the home page, let the NavLink handle navigation
+    if (location.pathname !== '/') {
+      return;
+    }
+    // If we're on the home page, scroll to top
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setIsMenuOpen(false);

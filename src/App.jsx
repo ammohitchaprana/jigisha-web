@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Appointment from './components/Appointment';
 import FloatingElements from './components/FloatingElements';
 import GalleryPage from './components/GalleryPage';
+import NotificationsPage from './components/NotificationsPage';
 import './assets/styles/App.css';
 
 import Layout from './admin-panel/Layout'
@@ -49,6 +50,7 @@ function App() {
 
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/notifications" element={<NotificationsPage />} />
 
           <Route path='/admin/login' element={<AdminLogin />} />
 

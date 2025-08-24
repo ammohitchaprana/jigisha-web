@@ -443,41 +443,9 @@ const GalleryPage = () => {
       description: "Food & Fruit distribution at KGMU Trauma Center during COVID-19 Wave"
     },
     {
-      id: 10,
-      title: "Children's Day Celebration at Both Free Tuition Centers",
-      date: "November 14, 2020",
-      images: [
-        { src: tcChildrensDayImage1, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage2, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage3, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage4, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage5, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage6, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage7, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage8, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
-        { src: tcChildrensDayImage9, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" }
-      ],
-      description: "Children's Day Celebration at Both Free Tuition Centers"
-    },
-    {
-      id: 11,
-      title: "Warm Clothes Distribution at Both Free Tuition Centers",
-      date: "December 2020",
-      images: [
-        { src: tcWarmClothesImage1, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
-        { src: tcWarmClothesImage2, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
-        { src: tcWarmClothesImage3, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
-        { src: tcWarmClothesImage4, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
-        { src: tcWarmClothesImage5, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
-        { src: tcWarmClothesImage6, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
-        { src: tcWarmClothesImage7, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" }
-      ],
-      description: "Warm Clothes Distribution at Both Free Tuition Centers"
-    },
-    {
       id: 12,
       title: "New Year Celebration at Both Free Tuition Centers",
-      date: "January 1, 2020",
+      date: "January 2, 2015",
       images: [
         { src: tcNewYearImage1, alt: "New Year Celebration - Educational Support", title: "Educational Support" },
         { src: tcNewYearImage2, alt: "New Year Celebration - Educational Support", title: "Educational Support" },
@@ -492,21 +460,41 @@ const GalleryPage = () => {
       description: "New Year Celebration at Both Free Tuition Centers"
     },
     {
-      id: 8,
-      title: "Free Tuition Center at Faizullaganj, Lucknow",
-      date: "",
+      id: 11,
+      title: "Warm Clothes Distribution at Both Free Tuition Centers",
+      date: "December 20, 2014",
       images: [
-        { src: tcFaizullaganjImage1, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" },
-        { src: tcFaizullaganjImage2, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" },
-        { src: tcFaizullaganjImage3, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" },
-        { src: tcFaizullaganjImage4, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" }
+        { src: tcWarmClothesImage1, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
+        { src: tcWarmClothesImage2, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
+        { src: tcWarmClothesImage3, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
+        { src: tcWarmClothesImage4, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
+        { src: tcWarmClothesImage5, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
+        { src: tcWarmClothesImage6, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" },
+        { src: tcWarmClothesImage7, alt: "Warm Clothes Distribution - Educational Support", title: "Educational Support" }
       ],
-      description: "Free Tuition Center at Faizullaganj, Lucknow"
+      description: "Warm Clothes Distribution at Both Free Tuition Centers"
+    },
+    {
+      id: 10,
+      title: "Children's Day Celebration at Both Free Tuition Centers",
+      date: "November 14, 2014",
+      images: [
+        { src: tcChildrensDayImage1, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage2, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage3, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage4, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage5, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage6, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage7, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage8, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" },
+        { src: tcChildrensDayImage9, alt: "Children's Day Celebration - Educational Support", title: "Educational Support" }
+      ],
+      description: "Children's Day Celebration at Both Free Tuition Centers"
     },
     {
       id: 9,
       title: "Free Tuition Center at Jankipuram Garden, Lucknow",
-      date: "",
+      date: "September 2014",
       images: [
         { src: tcJankipuramImage1, alt: "Tuition Center Jankipuram - Educational Support", title: "Educational Support" },
         { src: tcJankipuramImage2, alt: "Tuition Center Jankipuram - Educational Support", title: "Educational Support" },
@@ -514,6 +502,18 @@ const GalleryPage = () => {
         { src: tcJankipuramImage4, alt: "Tuition Center Jankipuram - Educational Support", title: "Educational Support" }
       ],
       description: "Free Tuition Center at Jankipuram Garden, Lucknow"
+    },
+    {
+      id: 8,
+      title: "Free Tuition Center at Faizullaganj, Lucknow",
+      date: "August 2014",
+      images: [
+        { src: tcFaizullaganjImage1, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" },
+        { src: tcFaizullaganjImage2, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" },
+        { src: tcFaizullaganjImage3, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" },
+        { src: tcFaizullaganjImage4, alt: "Tuition Center Faizullaganj - Educational Support", title: "Educational Support" }
+      ],
+      description: "Free Tuition Center at Faizullaganj, Lucknow"
     }
   ];
 

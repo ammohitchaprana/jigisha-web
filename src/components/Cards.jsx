@@ -52,57 +52,10 @@ const Cards = () => {
               Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center (Day 4) - July 2, 2025
             </Link>
           </li>
-          <li>
-            <Link to="/gallery?notification=1">
-              Free Food & Water Distribution at Queen Mary Hospital, KGMU for Patient Attendants - Dec 26, 2024
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=2">
-              Free Food & Water Distribution for PCS-Pre Candidates from Remote Districts - Dec 22, 2024
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=5">
-              Free Food & Fruit distribution at KGMU Trauma Center during COVID-19 Wave 2 - June 22, 2021
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=6">
-              Free Food & Fruit distribution at KGMU Trauma Center during COVID-19 Wave 2 - June 15, 2021
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=7">
-              Free Food & Fruit distribution at KGMU Trauma Center during COVID-19 Wave 2 - June 8, 2021
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=4">
-              Free Food & Fruit distribution at KGMU Trauma Center during COVID-19 Wave 2 - June 1, 2021
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=10">
-              Children's Day Celebration at Both Free Tuition Centers - November 14, 2020
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=11">
-              Warm Clothes Distribution at Both Free Tuition Centers - December 2020
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=12">
-              New Year Celebration at Both Free Tuition Centers - January 1, 2020
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=3">
-              Free Food & Fruit distribution at KGMU Trauma Center during COVID-19 Wave 2 - May 29, 2021
-            </Link>
-          </li>
         </ul>
+        <Link to="/notifications" className="btn-primary">
+          View More Notifications
+        </Link>
       </div>
     </section>
   );
