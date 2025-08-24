@@ -39,6 +39,19 @@
     position: absolute;
     left: 0;
   }
+
+  .notification-list li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: var(--transition);
+    display: block;
+    padding: 5px 0;
+  }
+
+  .notification-list li a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+  }
   
   .gallery-item {
     position: relative;

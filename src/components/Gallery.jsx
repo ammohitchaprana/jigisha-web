@@ -1,5 +1,6 @@
 // src/components/Gallery.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/components/Gallery.css';
 import WiA from '../assets/images/WiA1.jpeg';
 import WiA2 from '../assets/images/WiA2.jpeg';
@@ -74,9 +75,9 @@ const Gallery = () => {
           </div>
         </div>
         <div className="load-more">
-          <a href="/gallery" className="btn-primary">
+          <Link to="/gallery" className="btn-primary">
             View More Photos
-          </a>
+          </Link>
         </div>
       </div>
     </section>

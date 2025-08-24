@@ -10,6 +10,7 @@ import Donate from './components/Donate';
 import Footer from './components/Footer';
 import Appointment from './components/Appointment';
 import FloatingElements from './components/FloatingElements';
+import GalleryPage from './components/GalleryPage';
 import './assets/styles/App.css';
 
 import Layout from './admin-panel/Layout'
@@ -47,6 +48,7 @@ function App() {
           <Route path="/contact" element={<Footer />} /> */}
 
           <Route path="/appointment" element={<Appointment />} />
+          <Route path="/gallery" element={<GalleryPage />} />
 
           <Route path='/admin/login' element={<AdminLogin />} />
 
