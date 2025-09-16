@@ -34,13 +34,8 @@ const Cards = () => {
             </Link>
           </li>
           <li>
-            <Link to="/gallery?notification=13">
-              Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center (Day 1) - June 29, 2025
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery?notification=14">
-              Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center (Day 2) - June 30, 2025
+            <Link to="/gallery?notification=16">
+              Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center (Day 4) - July 2, 2025
             </Link>
           </li>
           <li>
@@ -49,8 +44,13 @@ const Cards = () => {
             </Link>
           </li>
           <li>
-            <Link to="/gallery?notification=16">
-              Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center (Day 4) - July 2, 2025
+            <Link to="/gallery?notification=14">
+              Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center (Day 2) - June 30, 2025
+            </Link>
+          </li>
+          <li>
+            <Link to="/gallery?notification=13">
+              Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center (Day 1) - June 29, 2025
             </Link>
           </li>
         </ul>

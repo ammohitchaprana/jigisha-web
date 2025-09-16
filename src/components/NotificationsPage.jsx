@@ -37,6 +37,12 @@ const NotificationsPage = () => {
       link: "/gallery?notification=13"
     },
     {
+      id: 18,
+      title: "Free Stationery and Essential Study Materials Distribution at Government Primary School, Village Godhana",
+      date: "April 14, 2025",
+      link: "/gallery?notification=18"
+    },
+    {
       id: 1,
       title: "Free Food & Water Distribution at Queen Mary Hospital, KGMU for Patient Attendants",
       date: "Dec 26, 2024",

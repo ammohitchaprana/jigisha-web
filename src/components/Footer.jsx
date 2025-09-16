@@ -10,12 +10,16 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-col">
             <div className="footer-logo">
-              <img src={logo} alt="Jigisha Society" />
-              <h3>Jigisha Society</h3>
+              <div className="logo-container">
+                <img src={logo} alt="Jigisha Society" />
+                <div className="title-section">
+                  <h3>Jigisha Society<br /><span className="text-sm">(For those who want to Win)</span></h3>
+                </div>
+              </div>
             </div>
-            <p>
+            {/* <p>
             Determined to help those who want to win.
-            </p>
+            </p> */}
             <div className="social-links">
               <a href="#">
                 <i className="fab fa-facebook-f"></i>

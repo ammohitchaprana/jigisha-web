@@ -98,6 +98,20 @@ import pcsJuly2Image12 from '../assets/images/PCS_02_07_25/WhatsApp Image 2025-0
 import pcsJuly2Image13 from '../assets/images/PCS_02_07_25/WhatsApp Image 2025-08-04 at 22.20.37.jpeg';
 import pcsJuly2Image14 from '../assets/images/PCS_02_07_25/WhatsApp Image 2025-08-04 at 22.20.37 (1).jpeg';
 
+// Primary Schools April 14, 2025 event images
+import primarySchoolsAprilImage1 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.34.jpeg';
+import primarySchoolsAprilImage2 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.35 (1).jpeg';
+import primarySchoolsAprilImage3 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.35.jpeg';
+import primarySchoolsAprilImage4 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.36 (1).jpeg';
+import primarySchoolsAprilImage5 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.36 (2).jpeg';
+import primarySchoolsAprilImage6 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.36.jpeg';
+import primarySchoolsAprilImage7 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.37 (1).jpeg';
+import primarySchoolsAprilImage8 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.37.jpeg';
+import primarySchoolsAprilImage9 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.38 (1).jpeg';
+import primarySchoolsAprilImage10 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.38 (2).jpeg';
+import primarySchoolsAprilImage11 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.38.jpeg';
+import primarySchoolsAprilImage12 from '../assets/images/Primary_Schools_14_09_25/WhatsApp Image 2025-09-04 at 23.41.39.jpeg';
+
 // Primary Schools August 3, 2025 event images
 import primarySchoolsImage1 from '../assets/images/Primary_Schools_03_08_25/WhatsApp Image 2025-08-10 at 13.33.22.jpeg';
 import primarySchoolsImage2 from '../assets/images/Primary_Schools_03_08_25/WhatsApp Image 2025-08-10 at 13.33.21.jpeg';
@@ -316,6 +330,26 @@ const GalleryPage = () => {
         { src: pcsJune29Image12, alt: "PCS Main Exam - Candidate Assistance", title: "Candidate Assistance" }
       ],
       description: "Free Food & Water Distribution for PCS Main Exam Candidates at Public Service Commission Center"
+    },
+    {
+      id: 18,
+      title: "Free Stationery and Essential Study Materials Distribution at Government Primary School, Village Godhana",
+      date: "April 14, 2025",
+      images: [
+        { src: primarySchoolsAprilImage1, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage2, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage3, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage4, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage5, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage6, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage7, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage8, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage9, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage10, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage11, alt: "Primary Schools - Educational Support", title: "Educational Support" },
+        { src: primarySchoolsAprilImage12, alt: "Primary Schools - Educational Support", title: "Educational Support" }
+      ],
+      description: "Free Stationery and Essential Study Materials Distribution at Government Primary School, Village Godhana"
     },
     {
       id: 1,

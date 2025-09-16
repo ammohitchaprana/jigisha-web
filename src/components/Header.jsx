@@ -61,7 +61,7 @@ const Header = () => {
           <img src={logo} alt="Jigisha Society" className="logo-img" />
           <div className="logo-text">
             <h1>Jigisha Society</h1>
-            <p>Serving the Community</p>
+            <p>For those who want to Win</p>
           </div>
         </div>
         <nav className="navbar">

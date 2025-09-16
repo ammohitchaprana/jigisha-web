@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../assets/styles/components/Hero.css';
-import heroImage from '../assets/images/build_comm_logo.avif';
+import heroImage from '../assets/images/hero.png';
 
 const Hero = () => {
   const handleNavClick = (e, sectionId) => {
@@ -17,7 +17,10 @@ const Hero = () => {
     <section
       className="hero"
       style={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage}) no-repeat center center/cover`,
+        background: `
+          linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+          url(${heroImage}) no-repeat center center/cover
+        `,
       }}
     >
       <div className="hero-content">

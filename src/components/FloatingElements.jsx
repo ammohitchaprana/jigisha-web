@@ -37,9 +37,9 @@ function FloatingElements() {
         <div className="translator-dropdown" id="google_translate_element"></div>
       </div>
 
-      <Link to="/appointment" className="floating-appointment">
+      {/* <Link to="/appointment" className="floating-appointment">
         <i className="fas fa-calendar-check"></i>
-      </Link>
+      </Link> */}
     </>
   );
 }

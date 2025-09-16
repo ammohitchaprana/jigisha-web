@@ -34,8 +34,7 @@
 .floating-translator.active .translator-dropdown {
     display: block;
 }
-
-.floating-appointment {
+/* .floating-appointment {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -57,4 +56,4 @@
 .floating-appointment:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 30px rgba(231, 76, 60, 0.6);
-}
+} */
